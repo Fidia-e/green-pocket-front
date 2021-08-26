@@ -1,0 +1,189 @@
+// Import
+@import '../../styles/vars';
+
+// CSS Feed
+
+/*
+CSS Feed : Mobile
+*/
+@media(max-width:767px) {}
+
+
+
+/*
+CSS Feed : Mobile
+*/
+@media(min-width:768px) and (max-width:1199px) {}
+
+
+/*
+CSS Feed : Desktop
+*/
+@media(min-width:1200px) {
+  .feed {
+    height: 65%;
+    background-color: $whiteColor;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #ccc;
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // Content top
+  .content--top {
+    height: 5%;
+    padding: 1em;
+    background-color: $boldColor;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: $whiteColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Content middle
+  .content--middle {
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list--posts {
+    width: 95%;
+    height: 95%;
+    padding: 0.5em;
+    background-color: $beigeColor;
+    border-radius: 3px;
+    overflow-y: scroll;
+  }
+
+  .list--posts::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  // Content bottom
+  .content--bottom {
+    height: 7%;
+    background-color: $whiteColor;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &--input{
+      border: none;
+      height: 100%;
+      width: 77%;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      color: $greyColor;
+      box-shadow: 2px 2px 7px $beigeColor inset;
+      padding-left: 0.5em;
+      
+      &::placeholder {
+        color: $beigeColor;
+      }
+    }
+
+    &--button {
+      border-radius: 5px;
+      padding: 0.6em;
+      margin-bottom: 1em;
+      border: 1px solid $lightColor;
+      background-color: $whiteColor;
+      color: $lightColor;
+    }
+
+    &--button:hover {
+      transform: scale(1.05)
+    }
+  }
+
+  // Component Cardpost
+  .cardPost {
+    background-color: $whiteColor;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+
+    h4 {
+      padding: 0.2em;
+      color: $greenColor;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      box-shadow: 2px 2px 7px $beigeColor;
+      font-size: 1.1em;
+    }
+
+    p {
+      font-weight: 100;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1em;
+      padding: 0.2em;
+      color: $greyColor;
+    }
+
+    &--buttons{
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        border-radius: 3px;
+        margin: 0.2em;
+      }
+
+      .comment {
+        background-color: $whiteColor;
+        border: 1px solid $lightColor;
+      }
+
+      .like {
+        background-color: $whiteColor;
+        border: 1px solid $coralColor;
+      }
+
+      .share {
+        background-color: $whiteColor;
+        border: 1px solid $brownColor;
+        margin-right: 0.3em;
+      }
+
+      .hover:hover {
+        transform: scale(1.10)
+      }
+    }
+
+    .button--icon--comment {
+      width: 1em;
+      height: 1em;
+      color: $lightColor;
+    }
+
+    .button--icon--like {
+      width: 1em;
+      height: 1em;
+      color: $coralColor;
+    }
+
+    .button--icon--share {
+      width: 1em;
+      height: 1em;
+      color: $brownColor;
+    }
+
+  }
+}

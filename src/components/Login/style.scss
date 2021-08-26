@@ -1,0 +1,318 @@
+/*
+Import files scss
+*/
+@import '../../styles/vars';
+
+/*
+CSS LandingPage vs Mobile
+*/
+@media(max-width:767px) {
+
+    .login {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--content {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+
+        &--pseudo {
+            padding: 0.5em 0.5em 0.5em 2em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            border: none;
+            box-shadow: -1px 1px 3px 1px #ccc inset;
+            
+        }
+
+        &--pwd {
+            padding: 0.5em 0.5em 0.5em 2em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            border: none;
+            box-shadow: -1px 1px 3px 1px #ccc inset;
+        }
+
+        &--buttonSubmit {
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            box-shadow: 2px 2px 7px #ccc;
+            width: 100%;
+            border: none;
+            background-color: $lightColor;
+            color: $whiteColor;
+
+        }
+
+        &--checkbox {
+          border: none;
+        }
+    }
+
+    .logoPseudo {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 5px;
+        color: $lightColor;
+    }
+
+    .logoPwd {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 5px;
+        color: $lightColor;
+    }
+
+    .welcome {
+        color: $greyColor;
+        margin-top: 2em;
+    }
+
+    .linkRegister {
+        width: 20em;
+        color: $greyColor;
+    }
+
+    .txtLog {
+        color: $coralColor;
+    }
+
+    .logoRegister {
+        margin-top: 0.5em;
+        font-size: 2.5em;
+        color: $lightColor;
+    }
+
+    .register {
+      border: none;
+    }
+}
+
+/*
+CSS LandingPage vs Tab
+*/
+
+@media(min-width:768px) and (max-width:1199px) {
+
+    .login {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--content {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+
+        &--pseudo {
+            padding: 0.5em 0.5em 0.5em 2em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            border: none;
+            box-shadow: -1px 1px 3px 1px #ccc inset;
+            
+        }
+
+        &--pwd {
+            padding: 0.5em 0.5em 0.5em 2em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            border: none;
+            box-shadow: -1px 1px 3px 1px #ccc inset;
+        }
+
+        &--buttonSubmit {
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            box-shadow: 2px 2px 7px #ccc;
+            width: 100%;
+            border: none;
+            background-color: $lightColor;
+            color: $whiteColor;
+
+        }
+
+        &--checkbox {
+          border: none;
+        }
+    }
+
+    .logoPseudo {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 5px;
+        color: $lightColor;
+    }
+
+    .logoPwd {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 5px;
+        color: $lightColor;
+    }
+
+    .welcome {
+        color: $greyColor;
+        margin-top: 350px;
+    }
+
+    .linkRegister {
+        width: 20em;
+        color: $greyColor;
+    }
+
+    .txtLog {
+        color: $coralColor;
+    }
+
+    .logoRegister {
+        margin-top: 0.5em;
+        font-size: 2.5em;
+        color: $lightColor;
+    }
+
+    .register {
+      border: none;
+    }
+}
+
+/*
+CSS LandingPage vs Desktop
+*/
+@media(min-width:1200px) {
+
+    .login {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--content {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+
+        &--pseudo {
+            padding: 0.5em 0.5em 0.5em 2em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            border: none;
+            box-shadow: -1px 1px 3px 1px #ccc inset;
+            
+        }
+
+        &--pwd {
+            padding: 0.5em 0.5em 0.5em 2em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            border: none;
+            box-shadow: -1px 1px 3px 1px #ccc inset;
+        }
+
+        &--buttonSubmit {
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            box-shadow: 2px 2px 7px #ccc;
+            width: 100%;
+            border: none;
+            background-color: $lightColor;
+            color: $whiteColor;
+
+        }
+
+        &--checkbox {
+          border: none;
+        }
+    }
+    .textChekbox {
+        color: $boldColor;
+    }
+
+    .logoPseudo {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 5px;
+        color: $lightColor;
+    }
+
+    .logoPwd {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 5px;
+        color: $lightColor;
+    }
+
+    .welcome {
+        color: $greyColor;
+    }
+
+    .linkRegister {
+        width: 20em;
+        color: $greyColor;
+    }
+
+    .txtLog {
+        color: $coralColor;
+    }
+
+    .logoRegister {
+        margin-top: 0.5em;
+        font-size: 2.5em;
+        color: $lightColor;
+    }
+
+    .register {
+      border: none;
+    }
+}

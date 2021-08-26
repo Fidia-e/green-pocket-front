@@ -1,0 +1,117 @@
+// Import
+@import '../../styles/vars';
+
+// CSS MiniProfil
+
+/*
+CSS MiniProfil : Mobile
+*/
+@media(max-width:767px) {}
+
+
+
+/*
+CSS MiniProfil : Mobile
+*/
+@media(min-width:768px) and (max-width:1199px) {}
+
+
+/*
+CSS MiniProfil : Desktop
+*/
+@media(min-width:1200px) {
+  .profil {
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #ccc;
+    margin: 0 0 1em 0;
+    height: 40%;
+    background-color: $whiteColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--header {
+      height: 25%;
+      background-color: $boldColor;
+      border-bottom: 1px solid #ccc;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .profil--icon {
+      color: $whiteColor;
+      width: 4em;
+      height: 4em;
+    }
+
+    &--name {
+      color: $whiteColor;
+      font-size: 1.8em;
+    }
+
+    &--title {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0.5em;
+    }
+
+    &--content {
+      align-self: center;
+      width: 90%;
+      padding: 1em;
+      font-size: 1.2em;
+      border: 1px solid $beigeColor;
+      border-radius: 10px;
+      background-color: $whiteColor;
+      box-shadow: 1px 1px 3px $brownColor inset;
+
+      p {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+        color: $greyColor;
+      }      
+    }
+  }
+
+  .profil--button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link--button {
+    padding: 0.3em;
+    margin: 0.5em;
+    border-radius: 5px;
+    width: 26%;
+    border: 1px solid $coralColor;
+    background-color: $whiteColor;
+    color: $coralColor;
+    align-self: flex-end;
+    &:hover {
+      transform: scale(1.10);
+    }
+  }
+
+  .myProfil--button {
+    border: none;
+    color: $coralColor;
+    background-color: $whiteColor;
+  }
+
+  .deconnexion--button {
+    padding: 0.4em;
+    margin: 0.5em;
+    border-radius: 5px;
+    width: 29%;
+    border: 1px solid $greyColor;
+    background-color: $whiteColor;
+    color: $greyColor;
+    align-self: flex-end;
+    &:hover {
+      transform: scale(1.10);
+    }
+  }
+}

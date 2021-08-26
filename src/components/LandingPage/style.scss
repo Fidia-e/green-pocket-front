@@ -1,0 +1,106 @@
+/*
+Import files scss
+*/
+@import '../../styles/vars';
+
+/*
+CSS LandingPage vs Mobile
+*/
+@media(max-width:767px) {
+    .landingPage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;     
+
+            &--description {
+              width: 100%;
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 0 0.5em;
+              background-color: $greenColor;
+              color: $whiteColor;
+
+              h1 {
+                  padding: 1em;
+              }
+            }
+    }
+
+    .landingPage-logo {
+      width: 200px;
+      margin: 0;
+      padding: 0;
+    }
+}
+/*
+CSS LandingPage vs Mobile
+*/
+@media(min-width:768px) and (max-width:1199px) {
+    .landingPage {
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;        
+
+            &--description {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 2em;
+                background-color: $greenColor;
+                color: $whiteColor;
+
+                h1 {
+                    padding: 1em;
+                }
+            }
+    }
+
+    .landingPage-logo {
+      width: 200px;
+      margin: 0;
+      padding: 0;
+    }
+}
+/*
+CSS LandingPage vs Desktop
+*/
+@media(min-width:1200px) {
+    .landingPage {      
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+
+            &--description {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $greenColor;
+                color: $whiteColor;
+                padding: 0 3em;
+
+                h2 {
+                  font-size: 1em;
+                  padding: 1em;
+                }
+
+                p {
+                  width: 600px;
+                  margin-bottom: 0.5em;
+                  text-align: center;
+                }
+            }
+    }
+    .landingPage-logo {
+      width: 600px;
+    }
+}

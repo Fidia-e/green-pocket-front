@@ -1,0 +1,41 @@
+/*
+Configuration of useful SCSS variables
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;700&display=swap');
+
+/*
+=== FONT ===
+*/
+$family: 'Sansita Swashed', cursive;
+
+$font300: 300;
+$font400: 400;
+$fontBold: 700;
+
+/*
+=== COLOR ===
+*/
+$whiteColor: #F5F5F5;
+$greenColor: #A5B499;
+$boldColor: #6c8164;
+$lightColor: #83A697;
+$brownColor: #B3B191;
+$greyColor: #808080;
+$beigeColor: #e8e1d4;
+$coralColor: #D68D60;
+
+/*
+=== USEFUL ANOTHER VARIABLE ===
+*/ 
+
+// gris anthracite #3a3d41
+
+// $boldColor: #649B88;
+// #A5B499
+// #6c8164
+
+// beige:
+// #e8d8c9
+// #c9baa5 (clair)
+// #c2998a

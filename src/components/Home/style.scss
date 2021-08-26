@@ -1,0 +1,223 @@
+/*
+Import files scss
+*/
+@import '../../styles/vars';
+
+/*
+CSS LandingPage vs Mobile
+*/
+@media(max-width:767px) {
+  .home {
+    flex: 1;
+    margin-top: 1em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whiteColor;
+
+    &--content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 1em;
+      flex-direction: column;
+      justify-content: center;
+
+      .home--logo {
+        
+        img {
+          position: absolute;
+          opacity: 0.2;
+          z-index: 0;
+          margin-top: auto;
+          width: 300px;
+          height: 300px;
+        }
+  
+        h1 {
+          display: none;
+        }  
+      }
+
+      .home--title {
+        z-index: 1;
+        color: $greenColor;
+        font-size: 1.5em;
+        margin: 1.5em 0;
+      }
+
+      h3 {
+        z-index: 1;
+        color: $greenColor;
+        font-size: 1em;
+        margin: 1em 0;
+      }
+
+      p {
+        z-index: 1;
+        font-size: 15px;
+        margin-bottom: 0.5em;
+        color: $greyColor;
+      }
+
+      ul {
+        z-index: 1;
+        font-size: 15px;
+        color: $greyColor;
+      }
+    }
+  }
+}
+
+/*
+CSS LandingPage vs Tab
+*/
+
+@media(min-width:768px) and (max-width:1199px) {
+  .home {
+    flex: 1;
+    margin-top: 1em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whiteColor;
+
+    &--content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 1em;
+      flex-direction: column;
+      justify-content: center;
+
+      .home--logo {
+        
+        img {
+          position: absolute;
+          opacity: 0.2;
+          z-index: 0;
+          top: 50%;
+          left: 50%;
+          width: 300px;
+          height: 300px;
+        }
+  
+        h1 {
+          display: none;
+        }
+  
+        
+      }
+      .home--title {
+        z-index: 1;
+        color: $greenColor;
+        font-size: 2.5em;
+        margin: 1.5em 0;
+      }
+
+      h3 {
+        z-index: 1;
+        color: $greenColor;
+        font-size: 2em;
+        margin: 1em 0;
+      }
+
+      p {
+        z-index: 1;
+        font-size: 20px;
+        margin-bottom: 0.5em;
+        color: $greyColor;
+      }
+
+      ul {
+        z-index: 1;
+        color: $greyColor;
+      }
+    }
+  }
+}
+
+/*
+CSS LandingPage vs Desktop
+*/
+@media(min-width:1200px) {
+
+  .home {
+    flex: 1;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+
+      .home--logo {
+        
+        img {
+          position: absolute;
+          opacity: 0.1;
+          z-index: 0;
+          width: 50%;
+          position: fixed;
+          right: 50px;
+          top: 150px;
+        }
+      }
+
+      .home--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 75%;
+
+        .home--title {
+          z-index: 1;
+          color: $boldColor;
+          font-size: 3em;
+          margin: 1.5em 0;
+        }
+
+        .title_list {
+          font-size: 2em;
+          margin-bottom: 2em;
+        }
+
+        h3 {
+          z-index: 1;
+          color: $boldColor;
+          font-size: 3em;
+          margin: 1.5em 0;
+        }
+
+        p {
+          z-index: 1;
+          font-size: 1.5em;
+          margin-bottom: 0.5em;
+          color: $greyColor;
+        }
+
+        ul {
+          z-index: 1;
+          font-size: 1.5em;
+          color: $greyColor;
+
+          li {
+            margin: 0.5em 0;
+          }
+        }
+      }
+    }
+  }
+}
+

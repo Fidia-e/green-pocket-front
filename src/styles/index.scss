@@ -1,0 +1,18 @@
+/*
+Entry point of CSS App
+*/
+
+/*
+Import scss files 
+*/
+@import './reset';
+@import './vars';
+
+/*
+========== START ==========
+*/
+
+body {
+  background-color: $whiteColor;
+  font-family: Arial, Helvetica, sans-serif;
+}
